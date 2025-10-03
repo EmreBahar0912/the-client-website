@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --green: #2e6f40;
+  --lightgreen: #68ba7f;
+}
+
 h1 {
   font-family: "Barlow", sans-serif;
   font-optical-sizing: auto;
@@ -10,7 +15,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Barlow", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.4;
@@ -32,8 +44,8 @@ header {
 hr {
   width: 100%;
   height: 25px;
-  background-color: green;
-  border: 1px solid green;
+  background-color: var(--green);
+  border: 1px solid var(--green);
 }
 
 .hamburger-menu {
@@ -101,7 +113,7 @@ hr {
   max-width: 500px;
 }
 
-/* h1 {
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,4 +142,114 @@ hr {
   justify-content: center;
   align-items: center;
   max-width: auto;
-} */
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  /* margin 3em auto zorgt voor 3em afstand boven en onder carousel-class 
+  en met auto berekent browser margin links en rechts */
+  margin: 1em auto;
+  gap: 1em;
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+  transform: scale(0.85);
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  border-radius: 6px;
+  /* tekst gaat centreren */
+  text-align: center;
+  padding: 1em;
+  flex: 0 0 20em;
+  scroll-snap-align: start;
+}
+
+/* scrollbar verdwijnt */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* rechts en links scrollen */
+.carousel::scroll-button(right),
+.carousel::scroll-button(left) {
+  content: "→";
+  background-color: var(--lightgreen);
+  border: var(--lightgreen);
+  height: 50px;
+  width: 50px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+  position-anchor: --carousel;
+  position-area: right center;
+  /* margin-left: -2em; */
+}
+
+.carousel::scroll-button(left) {
+  content: "←";
+}
+
+/* als je niet meer kan scrollen opacity lager */
+.carousel::scroll-button(right):disabled,
+.carousel::scroll-button(left):disabled {
+  opacity: 0.9;
+  /* cursor auto zorgt voor cursor change wanneer button disabled is */
+  cursor: auto;
+}
+
+.img-2 {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  text-align: center;
+}
+
+.img-3 {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  text-align: center;
+}
