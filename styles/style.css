@@ -14,14 +14,9 @@ h1 {
   line-height: 1.4;
 }
 
-h2 {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  line-height: 1.4;
-}
-
-h3 {
+h2,
+h3,
+h4 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -117,6 +112,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .img-1 {
@@ -315,4 +311,21 @@ footer h2 {
 
 .school-logos-slide img {
   height: 50px;
+}
+
+.contact {
+  text-align: center;
+  color: white;
+}
+
+.contact-1 p {
+  margin-top: -20px;
+}
+
+.contact p {
+  font-weight: 200;
+}
+
+.contact-2 p {
+  margin-top: -20px;
 }
