@@ -192,6 +192,12 @@ h1 {
   transition: opacity 0.5s ease-in-out;
 }
 
+.carousel img {
+  width: 275px;
+  height: 200px;
+  border-radius: 6px;
+}
+
 .card {
   border-radius: 6px;
   /* tekst gaat centreren */
