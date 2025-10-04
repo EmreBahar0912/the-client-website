@@ -42,6 +42,8 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -57,7 +59,7 @@ hr {
 }
 
 .hamburger-menu {
-  background-color: gray;
+  background-color: rgb(241, 241, 241);
   height: 100vh;
   width: 100%;
   max-width: 300px;
@@ -75,7 +77,7 @@ hr {
   width: 30px;
   height: 30px;
   font-size: 1.2rem;
-  translate: 700% 20%;
+  translate: 700% 30%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -91,6 +93,7 @@ hr {
   font-size: 2.5rem;
   display: flex;
   margin-top: 70%;
+  cursor: pointer;
 }
 
 .search-icon {
@@ -113,6 +116,15 @@ hr {
 
 .nav li:last-child {
   margin-bottom: 0;
+}
+
+.nav li a {
+  color: black;
+}
+
+.nav li a:hover {
+  color: var(--hovergreen);
+  transition: opacity 0.5s ease-in-out;
 }
 
 .logo {
@@ -173,12 +185,11 @@ h1 {
   color: white;
   border-radius: 25px;
   padding: 10px;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .carousel a:hover {
   background-color: var(--hovergreen);
+  transition: opacity 0.5s ease-in-out;
 }
 
 .card {
