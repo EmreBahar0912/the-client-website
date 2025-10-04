@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 :root {
   --green: #2e6f40;
   --lightgreen: #68ba7f;
@@ -252,6 +256,7 @@ h1 {
 
 footer {
   background-color: var(--green);
+  padding-bottom: 20px;
 }
 
 footer h2 {
@@ -328,4 +333,5 @@ footer h2 {
 
 .contact-2 p {
   margin-top: -20px;
+  margin-bottom: 0;
 }
