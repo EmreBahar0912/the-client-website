@@ -58,6 +58,7 @@ hr {
   border: 1px solid var(--green);
 }
 
+/* hamburger menu style */
 .hamburger-menu {
   background-color: rgb(241, 241, 241);
   height: 100vh;
@@ -297,15 +298,15 @@ footer {
   background-color: var(--green);
   padding-top: 1px;
   padding-bottom: 20px;
-}
 
-footer h2 {
-  color: white;
-  text-align: center;
+  h2 {
+    color: white;
+    text-align: center;
+  }
 }
 
 /* animatie voor de slide van school logo's */
-/* per 10% een transform zodat alle img's zichtbaar worden bij de slide */
+/* per 10% een transform zodat alle 10 img's zichtbaar worden bij de slide */
 @keyframes slide {
   0% {
     /* 15% zorgt ervoor dat de 1e img van de slide iets langer zichtbaar is */
@@ -352,23 +353,23 @@ footer h2 {
 .school-logos-slide {
   white-space: nowrap;
   animation: 33s slide infinite linear;
-}
 
-.school-logos-slide img {
-  height: 50px;
+  img {
+    height: 50px;
+  }
 }
 
 .contact {
   text-align: center;
   color: white;
+
+  p {
+    font-weight: 200;
+  }
 }
 
 .contact-1 p {
   margin-top: -20px;
-}
-
-.contact p {
-  font-weight: 200;
 }
 
 .contact-2 p {
