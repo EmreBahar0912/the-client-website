@@ -151,6 +151,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row;
+    margin: 1em;
+  }
 }
 
 .title-1 {
@@ -165,20 +170,26 @@ h1 {
   align-items: center;
   max-width: auto;
   text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    position: relative;
+    top: 2em;
+  }
 }
 
 .carousel {
   display: flex;
   /* margin 3em auto zorgt voor 3em afstand boven en onder carousel-class 
   en met auto berekent browser margin links en rechts */
-  margin: 1em auto;
+  /* margin: 1em auto; */
   gap: 1em;
   overflow-x: auto;
   width: 100%;
   scroll-behavior: smooth;
   transform: scale(0.85);
-  anchor-name: --carousel;
+
   scroll-snap-type: x mandatory;
+  position: relative;
 }
 
 .carousel a {
@@ -208,35 +219,56 @@ h1 {
   scroll-snap-align: start;
 }
 
+.carousel-kalender {
+  anchor-name: --carousel-kalender;
+}
+
+.carousel-aktueel {
+  anchor-name: --carousel-aktueel;
+}
+
 /* scrollbar verdwijnt */
-.carousel::-webkit-scrollbar {
-  display: none;
+.carousel {
+  scrollbar-width: none;
 }
 
 /* rechts en links scrollen */
-.carousel::scroll-button(right),
-.carousel::scroll-button(left) {
-  content: "→";
+.carousel::scroll-button(*) {
   background-color: var(--lightgreen);
   border: var(--lightgreen);
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   font-size: 2.5rem;
   border-radius: 50%;
   padding-bottom: 0.1em;
   cursor: pointer;
   position-anchor: --carousel;
-  position-area: right center;
-  /* margin-left: -2em; */
+  position-area: center center;
+  position: absolute;
+}
+
+.carousel-kalender::scroll-button(*) {
+  position-anchor: --carousel-kalender;
+}
+
+.carousel-aktueel::scroll-button(*) {
+  position-anchor: --carousel-aktueel;
 }
 
 .carousel::scroll-button(left) {
   content: "←";
+  justify-self: start;
+  margin-left: 1rem;
+}
+
+.carousel::scroll-button(right) {
+  content: "→";
+  justify-self: end;
+  margin-right: 1rem;
 }
 
 /* als je niet meer kan scrollen opacity lager */
-.carousel::scroll-button(right):disabled,
-.carousel::scroll-button(left):disabled {
+.carousel::scroll-button(*):disabled {
   opacity: 0.9;
   /* cursor auto zorgt voor cursor change wanneer button disabled is */
   cursor: auto;
@@ -252,6 +284,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row-reverse;
+    margin: 1em;
+  }
 }
 
 .title-2 {
@@ -266,6 +303,12 @@ h1 {
   align-items: center;
   max-width: auto;
   text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    position: relative;
+    margin: 0.5em;
+    top: 2em;
+  }
 }
 
 .img-3 {
@@ -277,7 +320,13 @@ h1 {
 .container-3 {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row;
+    margin: 1em;
+  }
 }
 
 .title-3 {
@@ -292,6 +341,12 @@ h1 {
   align-items: center;
   max-width: auto;
   text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    position: relative;
+    margin: 0.5em;
+    top: 3em;
+  }
 }
 
 footer {
@@ -361,10 +416,17 @@ footer {
 
 .contact {
   text-align: center;
+  place-content: center;
+  gap: 2em;
   color: white;
 
   p {
     font-weight: 200;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 865px) {
+    display: flex;
+    margin: 1em;
   }
 }
 
