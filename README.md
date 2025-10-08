@@ -24,9 +24,11 @@ Ook heb ik een passend 'catch' toegevoegd als titel onder de header "Associate d
 Een kopje is ook belangrijk, hierin heb ik op mijn eigen website een kopje toegevoegd "Wat is een AD?" Dit is waar een gebruiker die naar onze website wil het meest naar uitkijkt, namelijk wat een AD-opleiding precies inhoudt.
 
 Originele Homepage:
+
 <img width="332" height="481" alt="image" src="https://github.com/user-attachments/assets/c6a4aa68-72aa-41c1-a744-42d4eb02b53c" />
 
 Mijn gemaakte Homepage:
+
 <img width="331" height="487" alt="image" src="https://github.com/user-attachments/assets/3d842ffa-ffe8-44f4-876e-2dfa2235678f" />
 
 Hamburger-menu heb ik werkend gemaakt. Het kan open dicht met daarbij een transition erbij zodat de overgang soepel verloopt i.p.v. dat het hamburger-menu in een keer tevoorschijn komt. Op de linkjes in het menu zit ook een hover erop, deze is te zien op laptop/PC devices. Voor de gebruiker een erg handig visuele toevoeging.
