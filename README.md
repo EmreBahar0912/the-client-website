@@ -1,6 +1,7 @@
 # The Client - Website
 
-Ontwerp en maak een compleet nieuwe website voor de opdrachtgevers van AdConnect aan de hand van de sprint reviews. 
+Ontwerp en maak een compleet nieuwe website voor de opdrachtgevers van AdConnect aan de hand van de sprint reviews.
+Live website URL van @EmreBahar0912: https://emrebahar0912.github.io/the-client-website/
 
 De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/the-client-website/blob/main/docs/INSTRUCTIONS.md)
 
