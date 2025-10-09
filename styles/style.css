@@ -72,6 +72,10 @@ hr {
   justify-content: center;
   justify-items: center;
   transition: 0.3s ease;
+
+  @media screen and (min-width: 866px) {
+    left: 0;
+  }
 }
 
 .close-btn {
@@ -168,7 +172,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: auto;
+  max-width: 100%;
   text-align: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
@@ -301,7 +305,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: auto;
+  max-width: 100%;
   text-align: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
@@ -339,7 +343,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: auto;
+  max-width: 100%;
   text-align: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
