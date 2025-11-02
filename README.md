@@ -78,19 +78,16 @@ FOOTER VIDEO*
 Ik heb gebruikgemaakt van een hamburger-menu waarmee ik voor het eerst heb gewerkt, ook heb ik een automatische slider toegevoegd in de footer met keyframes. En ook gebruiktgemaakt van CSS scroll-buttons en anchor-positioning voor de carousel.
 
 - Hamburger-menu:
-
 <img width="875" height="406" alt="image" src="https://github.com/user-attachments/assets/dab0ad68-e350-4cc8-a725-f596127b7ee5" />
 <img width="471" height="463" alt="image" src="https://github.com/user-attachments/assets/baa379f3-cabf-4fdf-a622-d14de9eaf3a8" />
 <img width="345" height="64" alt="image" src="https://github.com/user-attachments/assets/9bf8dcf6-70a1-4c51-8e5d-b1e3638a4d29" />
 
 - Keyframes auto slider:
-
 <img width="776" height="331" alt="image" src="https://github.com/user-attachments/assets/de001e89-c17b-487b-9c98-f48f6b5e18d7" />
 <img width="731" height="611" alt="image" src="https://github.com/user-attachments/assets/57628e8f-5a5b-4c5c-91e0-c3315afc7016" />
 <img width="771" height="439" alt="image" src="https://github.com/user-attachments/assets/78e61cb5-a2c9-42c1-a17e-a86e569bfbe3" />
 
 - CSS scroll-buttons & anchor-position:
-
 <img width="609" height="597" alt="image" src="https://github.com/user-attachments/assets/0a32d45e-ea19-42fc-928a-2011544ae982" />
 <img width="637" height="438" alt="image" src="https://github.com/user-attachments/assets/091ae248-16d1-495e-b006-a19b25e63414" />
 
